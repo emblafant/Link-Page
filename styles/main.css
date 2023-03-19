@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #FDE1E8;
+}
+
+#__next {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: 400px) {
+  #__next.overflow {
+    padding: 50px 0;
+    height: 100%;
+  }
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 400px;
+  padding: 50px 30px;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 400px) {
+  main {
+    max-width: 100vw;
+    padding: 16px;
+    border-radius: 0;
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+  }
+}
+
+#overlay {
+  z-index: -1;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fde1e8;
+  opacity: 20%;
+  top: 0;
+  left: 0;
+}
+
+.image-container {
+  position: relative;
+}
+
+#backgroundContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -100;
+}
+
+#backgroundImage {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
+#profileImageContainer {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 16px;
+}
+
+#profileImage {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#logoContainer {
+  height: 32px;
+  width: 100%;
+}
+
+#logoImage {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#title {
+  font-family: "Rampart One", cursive;
+  color: #FD7A78;
+  text-align: center;
+}
+
+#description {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-family: "Architects Daughter", cursive;
+  color: #412F22;
+  text-align: center;
+}
+
+#linkContainer {
+  width: 100%;
+}
+
+.link {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 20px;
+  margin: 16px 0;
+  background-color: #FFD0D5;
+  border-radius: 10px;
+  color: #EA6E86;
+  font-family: "Bungee", cursive;
+  text-decoration: none;
+  text-align: center;
+}
+
+.link svg {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  position: absolute;
+  left: 20px;
+  color: #EA6E86;
+}
+
+.link:hover {
+  background-color: pink;
+}
+
+#link0 {
+  background-color: #FEEBBB;
+  color: #EEA609;
+}
+
+#link0 svg {
+  color: #EEA609;
+}
+
+#link1 {
+  background-color: #E5ECC5;
+  color: #ABA929;
+}
+
+#link1 svg {
+  color: #ABA929;
+}
+
+#link2 {
+  background-color: #FED0D4;
+  color: #EA6E86;
+}
+
+#link2 svg {
+  color: #EA6E86;
+}
+
+#link3 {
+  background-color: #FEEBBB;
+  color: #EEA609;
+}
+
+#link3 svg {
+  color: #EEA609;
+}
+/*# sourceMappingURL=main.css.map */

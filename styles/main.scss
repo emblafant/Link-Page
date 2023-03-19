@@ -1,0 +1,201 @@
+$mobile-breakpoint: 400px;
+
+//Fill in styling variables;
+$background-color1: #FDE1E8;
+$background-color2: white;
+$link-color: #FFD0D5;
+$link-color-hover: pink;
+$title-color: #FD7A78;
+$description-color: #412F22;
+$icon-color: #EA6E86;
+$link-text-color: #EA6E86;
+$overlay-color: #fde1e8;
+$overlay-opacity: 20%;
+$background-blur: 3px;
+
+//Import fonts here
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+$title-font: 'Rampart One', cursive;
+$description-font: 'Architects Daughter', cursive;
+$link-font: 'Bungee', cursive;
+
+
+
+//Main
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-color1;
+}
+#__next {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+
+  @media (min-width: $mobile-breakpoint) {
+    &.overflow {
+      padding: 50px 0;
+      height: 100%;
+    }
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: $mobile-breakpoint;
+  padding: 50px 30px;
+  position: relative;
+
+  @media (max-width: $mobile-breakpoint) {
+    max-width: 100vw;
+    padding: 16px;
+    border-radius: 0;
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+  }
+
+  background-color: $background-color2;
+  border-radius: 10px;
+
+}
+//Overlay
+#overlay {
+  z-index: -1;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: $overlay-color;
+  opacity: $overlay-opacity;
+  top:0;
+  left: 0;
+}
+
+//Images
+.image-container {
+  position: relative;
+}
+
+#backgroundContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -100;
+}
+
+#backgroundImage {
+  object-fit: cover;
+  filter: blur($background-blur);
+}
+
+#profileImageContainer {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 16px;
+}
+
+#profileImage {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#logoContainer {
+  height: 32px;
+  width: 100%;
+}
+
+#logoImage {
+  object-fit: contain;
+}
+
+//Text
+#title {
+  font-family: $title-font;
+  color: $title-color;
+  text-align: center;
+}
+
+#description {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-family: $description-font;
+  color: $description-color;
+  text-align: center;
+}
+
+//Links
+#linkContainer {
+  width: 100%;
+}
+
+.link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  $link-padding: 20px;
+  padding: $link-padding;
+  margin: 16px 0;
+
+  svg {
+    box-sizing: content-box;
+    position: absolute;
+    left: $link-padding;
+
+    color: $icon-color;
+  }
+  
+  background-color: $link-color;
+  border-radius: 10px;
+  color: $link-text-color;
+  font-family: $link-font;
+  text-decoration: none;
+  text-align: center;
+}
+
+.link:hover {
+  background-color: pink;
+}
+
+//Peronal styling
+#link0 {
+  background-color: #FEEBBB;
+  color: #EEA609;
+  svg {color: #EEA609}
+}
+
+#link1 {
+  background-color: #E5ECC5;
+  color: #ABA929;
+  svg {color: #ABA929}
+}
+
+#link2 {
+  background-color: #FED0D4;
+  color: #EA6E86;
+  svg {color: #EA6E86}
+}
+
+#link3 {
+  background-color: #FEEBBB;
+  color: #EEA609;
+  svg {color: #EEA609}
+}
