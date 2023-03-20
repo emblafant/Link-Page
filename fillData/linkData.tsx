@@ -18,7 +18,7 @@ const linkData = [
   {
     icon: FaAddressCard,
     text: "Resume",
-    link: "emblaResume.pdf",
+    link: "https://embla-links.vercel.app/emblaResume.pdf",
   },
   {
     icon: FaGithubAlt,
