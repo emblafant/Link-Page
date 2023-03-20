@@ -15,7 +15,7 @@ const LinkComponent = ({link, renderIcon, text, id}:LinkProps) => {
   return (
     <Link 
     id={id}
-    href={JSON.stringify(link)} 
+    href={link} 
     className="link animate__animated"
     onMouseEnter={((event) => handleAnimation(event, "animate__pulse"))}
     >

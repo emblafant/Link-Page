@@ -18,7 +18,7 @@ const linkData = [
   {
     icon: FaAddressCard,
     text: "Resume",
-    link: "\resume\myResume.pdf.pdf",
+    link: "/resume/myResume.pdf",
   },
   {
     icon: FaGithubAlt,
