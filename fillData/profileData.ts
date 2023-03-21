@@ -4,10 +4,10 @@
 //Backround is optional
 
 const profileData = {
-  profileImage: "girlwflower.jpg",
+  profileImage: "profile-image.png",
   logo: "",
-  name: "Embla",
-  text: "My dream is eat dirt, I love toxins",
+  name: "embla",
+  text: "Front End Developer",
   background: "Sakura.jpg",
 }
 export default profileData

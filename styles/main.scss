@@ -6,7 +6,7 @@ $background-color2: white;
 $link-color: #FFD0D5;
 $link-color-hover: pink;
 $title-color: #FD7A78;
-$description-color: #412F22;
+$description-color: #795d5a;
 $icon-color: #EA6E86;
 $link-text-color: #EA6E86;
 $overlay-color: #fde1e8;
@@ -14,11 +14,11 @@ $overlay-opacity: 20%;
 $background-blur: 3px;
 
 //Import fonts here
-@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
-$title-font: 'Rampart One', cursive;
-$description-font: 'Architects Daughter', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+$title-font: 'Press Start 2P', cursive;
+$description-font: 'Cute Font', cursive;
 $link-font: 'Bungee', cursive;
 
 
@@ -96,6 +96,11 @@ main {
   width: 100vw;
   height: 100vh;
   z-index: -100;
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 0;
+    height: 0;
+  }
 }
 
 #backgroundImage {
@@ -137,6 +142,7 @@ main {
   font-family: $description-font;
   color: $description-color;
   text-align: center;
+  font-size: 22px; //Personal styling
 }
 
 //Links
