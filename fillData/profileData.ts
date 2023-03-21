@@ -7,7 +7,7 @@ const profileData = {
   profileImage: "profile-image.png",
   logo: "",
   name: "embla",
-  text: "Front End Developer",
+  text: "Frontend Developer",
   background: "Sakura.jpg",
 }
 export default profileData
